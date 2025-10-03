@@ -1,0 +1,70 @@
+Nav {
+  background-color: aqua;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  gap: 14px;
+  border-bottom: 1px solid black;
+}
+
+.navbar-item {
+  border: 1px solid black;
+  padding: 3px;
+  background-color: white;
+}
+
+body {
+  margin: 0%;
+}
+
+main {
+  padding-top: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box1 {
+  border: 2px solid aqua;
+  padding: 10px;
+  width: 750px;
+  background-color: aquamarine;
+}
+
+.box1 h1 {
+  border: 2px solid darkblue;
+  width: 400px;
+  height: 200px;
+  background-color: gray;
+  padding-left: 250px;
+  padding-top: 180px;
+}
+
+.simple {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+}
+
+.home {
+  background-color: aliceblue;
+  border: 1.5px solid black;
+  padding-left: 10px;
+}
+
+.footer {
+  background-color: darkblue;
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid black;
+}
