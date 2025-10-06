@@ -1,0 +1,87 @@
+header { 
+    background-color: cornflowerblue ;
+    width: 100%;
+    padding: 40px 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white; 
+    display: inline-flex;
+       
+}
+
+.demo-button {
+    padding: 16px;
+    border-radius: 4cm;
+    background-color: cornflowerblue;
+    color: white;
+    border: 0px;
+}
+
+nav {
+    gap: 10px;
+    text-decoration: none;
+    a:hover {
+        background-color: rgb(120, 160, 235);
+        padding: 5px;
+    }
+}
+.card {
+ border-radius: 1cm;
+ justify-content: center;
+ align-items: center;
+ padding: 40px;
+ background-color: rgb(255, 255, 255);
+ margin: 40px 20px;
+ gap: 15px;
+}
+h2 {
+    color: cornflowerblue;
+}
+
+   
+.feature-list li::before {
+ content:"✓";
+ color: cornflowerblue;
+ margin-right: 8px;
+}
+
+.feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main {
+    background-color: rgb(239, 229, 216);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 20px;
+    padding: 20px;
+}
+.higlight-box {
+    border-left: 3px solid cornflowerblue;
+    font-style: italic;
+    padding: 20px;
+    background-color: rgba(100, 148, 237, 0.122);
+}
+
+.card {
+     gap: 15px;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.input-group {
+    
+}
