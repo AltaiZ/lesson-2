@@ -1,0 +1,105 @@
+body {
+    background-color: ;
+    padding: 0%;
+}
+
+.logo {
+    height: 50px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 30px 100px; 
+    align-items: center;
+}
+
+
+header div a {
+    text-decoration: none;
+    color: black;
+       
+}
+
+.contact {
+    background-color: purple;
+    border: 1px solid purple;
+    border-radius: 0.1cm ;
+    height: 30px;
+    width: 80px;
+    font-size: larger;
+    color: white;
+}
+
+.home {
+    background-color: purple;
+    border: 1px solid purple;
+    border-radius: 0.1cm ;
+    height: 30px;
+    width: 80px;
+    font-size: larger;
+    color: white;
+}
+
+.logo1 {
+    display: flex;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: blueviolet;
+} 
+
+a:hover {
+    background-color: purple;
+    color: white;
+    font-size: larger;
+    border-radius: 0.1cm;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(242, 238, 247);
+}
+
+.picture {
+    background-color: white;
+    border-radius: 1cm;
+}
+
+button {
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    font-size: larger;
+    border-radius: 0.2cm;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(120, 36, 199);
+    font-size: large;
+}
+
+.exp {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    height: 150px;
+    }
+
+.exp div {
+    background-color: rgb(247, 214, 219);
+    padding: 20px;
+    width: 100%;
+}
+
+.main1 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
