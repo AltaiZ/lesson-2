@@ -1,0 +1,119 @@
+.wrapper {
+  background-color: rgb(201, 200, 200);
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 450px 450px;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.card1 {
+  background-color: white;
+  border-radius: 0.1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card2 {
+  background-color: white;
+  border-radius: 0.1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card3 {
+  background-color: white;
+  border-radius: 0.1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card4 {
+  background-color: white;
+  border-radius: 0.1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card5 {
+  background-color: white;
+  border-radius: 0.1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card6 {
+  background-color: white;
+  border-radius: 0.1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card7 {
+  background-color: white;
+  border-radius: 0.1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card8 {
+  background-color: white;
+  border-radius: 0.1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card1 img {
+  height: 200px;
+  width: 200px;
+}
+
+.card2 img {
+  height: 200px;
+  width: 200px;
+}
+.card3 img {
+  height: 200px;
+  width: 200px;
+}
+.card4 img {
+  height: 200px;
+  width: 200px;
+}
+.card5 img {
+  height: 200px;
+  width: 200px;
+}
+.card6 img {
+  height: 200px;
+  width: 200px;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 0.1cm;
+}
+button:hover {
+  background-color: rgb(92, 132, 207);
+}
+
+.starContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
