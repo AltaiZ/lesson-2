@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 20px;
 }
 
 .title {
@@ -27,15 +28,18 @@
   flex-direction: row;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (min-width: 600px) and (max-width: 992px ){
   .resize {
     background-color: red;
   }
   .title {
-    width: 50%;
+    width: 45%;
   }
   .title2 {
-    width: 50%;
+    width: 45%;
+  }
+  .title3 {
+    width: 45%;
   }
   .boxes {
     flex-wrap: wrap;    }
