@@ -1,55 +1,132 @@
-* {
-  margin: 0;
-  padding: 20px;
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: background-color 0.5s ease;
 }
-
-.title {
-  flex-grow: 1;
-}
-
-.title2 {
-  flex-grow: 1;
-}
-
-.title3 {
-  flex-grow: 1;
-}
-.resize {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.box:hover {
   background-color: blue;
-  color: white;
-  height: 50px;
 }
 
-.boxes {
+.visible-box {
+  visibility: hidden;
+}
+
+.hidden-box:hover {
+  visibility: hidden;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  opacity: 1;
+}
+
+.box2:hover {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.image {
+  background-image: url(Trump.jpg);
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.name {
+  background-color: rgba(136, 203, 245, 0.739);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  height: 20px;
+  color: white;
+}
+.description {
+  display: none;
+}
+.image:hover .description {
+  display: block;
+}
+
+.image:hover .name {
+  height: 150px;
+  transition: all 0.5s ease;
+}
+
+.image2 {
+  background-image: url(Putin.jpg.avif);
+  background-position: 36%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.name2 {
+  background-color: rgba(86, 39, 241, 0.739);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  height: 20px;
+  color: white;
+}
+.description2 {
+  display: none;
+}
+.image2:hover .description2 {
+  display: block;
+}
+
+.image2:hover .name2 {
+  height: 150px;
+  transition: all 0.5s ease;
+}
+
+.image3 {
+  background-image: url(XiJinping.jpg.webp);
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.name3 {
+  background-color: rgba(245, 25, 25, 0.505);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  height: 20px;
+  color: white;
+}
+.description3 {
+  display: none;
+}
+.image3:hover .description3 {
+  display: block;
+}
+
+.image3:hover .name3 {
+  height: 150px;
+  transition: all 0.5s ease;
+}
+
+.main-container {
   display: flex;
   flex-direction: row;
 }
-
-@media only screen and (min-width: 600px) and (max-width: 992px ){
-  .resize {
-    background-color: red;
-  }
-  .title {
-    width: 45%;
-  }
-  .title2 {
-    width: 45%;
-  }
-  .title3 {
-    width: 45%;
-  }
-  .boxes {
-    flex-wrap: wrap;    }
-  }
-
-@media only screen and (max-width: 600px) {
-  .boxes {
-    flex-direction: column;
-  }
-  .resize {
-    background-color: green;
-  }
-}
+message.txt

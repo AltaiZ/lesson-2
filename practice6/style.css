@@ -138,3 +138,35 @@ button:hover {
   grid-template-columns: 300px;
     grid-template-rows: 450px 450px 450px 450px 450px 450px 450px 450px;}
 }
+
+.card1  {
+  box-shadow: 10px 10px 10px  gray;
+}
+
+.card2  {
+  box-shadow: 10px 10px 10px  red;
+}
+
+.card3  {
+  box-shadow: 10px 10px 10px  blue;
+}
+
+.card4  {
+  box-shadow: 10px 10px 10px  green;
+}
+
+.card5  {
+  box-shadow: 10px 10px 10px  yellow;
+}
+
+.card6  {
+  box-shadow: 10px 10px 10px  orange;
+}
+
+.card7  {
+  box-shadow: 10px 10px 10px  black;
+}
+
+.card8  {
+  box-shadow: 10px 10px 10px  purple;
+}

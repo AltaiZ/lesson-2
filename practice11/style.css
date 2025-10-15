@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #8b4513;
+  padding-right: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.logo {
+  display: flex;
+  color: #f4e4bc;
+}
+
+.navbar {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f4e4bc;
+  font-size: larger;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d4af37;
+  font-size: large;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #bc9c32;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-image: linear-gradient(
+      rgba(139, 69, 19, 0.7),
+      rgba(101, 67, 33, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60w=2000");
+    background-size: cover;
+    background-position: center;
+}
+
+#title {
+  font-size: x-large;
+}
+
+.hero {
+  font-size: 400%;
+}
+
+.main2 {
+  display: flex;
+  background-color: #f4e4bc;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coffee {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.price {
+  color: #d4af37;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px black solid;
+  border-color: rgba(0, 0, 0, 0.049);
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.menu {
+  background-color: white;
+  width: 350px;
+  border-radius: 10px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heromenu {
+    display: flex;
+    gap: 30px;
+}
+
+.menutitle {
+    border-bottom: 2px solid #d4af37;
+    color: #8b4513;
+}

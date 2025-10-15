@@ -1,7 +1,35 @@
 * {
-  margin: 0;
-  padding: 0;}
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
-  body {
-    background-color: rgb(221, 218, 218);
-  }
+button {
+    height: 70px;
+    width: 100px;
+    background-color: greenyellow;
+    color: black;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.shadow1 {
+    box-shadow: 0px 5px 2px  gray;
+}
+
+.shadow2 {
+    box-shadow: -2px 5px 2px gray, 2px 5px 2px gray  
+}
+
+.shadow3 {
+    box-shadow: 0px 5px 2px gray inset, 3px 5px 2px gray inset 
+}
+
+.shadow4 {
+    box-shadow: -5px -5px 2px gray, 5px 5px 2px gray
+}
