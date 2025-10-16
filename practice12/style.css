@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.box1 {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation-name: move;
+  position: relative;
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+.text1 {
+  opacity: 0;
+  animation-name: text;
+  animation: text 2s forwards;
+  font-size: xx-large;
+  animation-duration: 1.5s;
+}
+
+@keyframes text {
+  to {
+    opacity: 1;
+  }
+}
+
+button {
+  height: 100px;
+  width: 150px;
+  background-color: cyan;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: bold;
+  animation-name: butt;
+  position: relative;
+  animation: butt 1s infinite alternate;
+}
+
+@keyframes butt {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.box2 {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: relative;
+  animation: 3s alternate infinite;
+  animation-name: color;
+}
+
+@keyframes color {
+  0% {
+    background-color: blue;
+  }
+  33% {
+    background-color: yellow;
+  }
+  66% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.bye {
+  animation: 3s ease;
+  animation-name: slide;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box6 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.box6:hover {
+  transform: translate(50px, 20px);
+  transition: all 0.5s ease;
+}
+
+.box7 {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.box7:hover {
+  transform: rotate(360deg);
+  transition: all 2s ease;
+}
+
+.box8 {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  transition: all 4s ease;
+}
+
+.box8:hover {
+  transform: scale(1.2);
+}
+
+.box8:hover::after {
+  transform: scale(1);
+}
+
+.text2 {
+  transform: skew(20deg);
+}
+
+.text2:hover {
+  transform: skew(0deg);
+}
+
+.box9 {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  transition: all 1s;
+}
+
+.box9:hover {
+  rotate: 360deg;
+  scale: 1.5;
+  translate: 30px;
+}
