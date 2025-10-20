@@ -1,13 +1,4 @@
-.wrapper {
-  background-color: rgb(201, 200, 200);
-  display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
-  grid-template-rows: 450px 450px;
-  column-gap: 20px;
-  row-gap: 20px;
-  padding: 20px;
-  justify-content: center;
-}
+
 
 .card1 {
   background-color: white;
@@ -116,6 +107,17 @@ button:hover {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: rgb(201, 200, 200);
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 450px 450px;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
   justify-content: center;
 }
 

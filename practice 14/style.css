@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #8b4513;
+  padding-right: 50px;
+  padding-left: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.logo {
+  display: flex;
+  color: #f4e4bc;
+}
+
+.navbar {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f4e4bc;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d4af37;
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.7s ease;
+}
+
+button:hover {
+  background-color: #bc9c32;
+  transform: scale(1.1);
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-image: linear-gradient(
+      rgba(139, 69, 19, 0.7),
+      rgba(101, 67, 33, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60w=2000");
+  background-size: cover;
+  background-position: center;
+}
+
+#title {
+  font-size: large;
+}
+
+.hero {
+  font-size: 400%;
+}
+
+.main2 {
+  display: flex;
+  background-color: #f4e4bc;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.coffee {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.price {
+  color: #d4af37;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.menu-item {
+  display: flex;
+  border-bottom: 1px black solid;
+  border-color: rgba(0, 0, 0, 0.049);
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.menu {
+  background-color: white;
+  width: 350px;
+  border-radius: 10px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heromenu {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 200px;
+}
+
+@media only screen and (max-width: 1200px ) {
+  .heromenu{
+    grid-template-columns: 2 repeat(200px);
+    grid-template-rows: 300px, 300px ;
+       }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .heromenu{  
+  grid-template-columns: 2 repeat(200px);
+  
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .heromenu{  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+    }
+}
+
+.menutitle {
+  border-bottom: 2px solid #d4af37;
+  color: #8b4513;
+}
+
+#about {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.third {
+  display: grid;
+  grid-template-columns: 700px 200px;
+  gap: 20px;
+}
+
+.story {
+  height: 123px;
+  width: 312px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.story {
+  animation: scale all ease 2s;
+  animation-name: scale;
+  transition: all 0.7s ease;
+}
+
+.story:hover {
+  border: 2px solid #d4af37;
+  transform: scale(1.1);
+}
+
+@keyframes scale {
+}
+
+footer {
+  height: 80vh;
+  background-color: #2c1810;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.infobox {
+  width: 522px;
+  height: 133.109px;
+  color: #f4e4bc;
+  padding: 16px;
+  transition: all 0.7s ease;
+}
+
+.infobox:hover {
+  background-color: #43261b;
+  border-radius: 10px;
+}
+
+.loc {
+  height: 428.531px;
+  width: 452px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.7s ease;
+}
+
+.loc:hover {
+  border: 2px solid #d4af37;
+  transform: scale(1.1);
+}
+
+.infocontainer {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
