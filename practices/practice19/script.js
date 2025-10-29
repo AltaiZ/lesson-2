@@ -1,5 +1,7 @@
 // 1
 
+// const { use } = require("react")
+
 // const car = {
 //     brand: "Toyota",
 //     model: "Estima",
@@ -10,10 +12,14 @@
 // 2
 
 // const person = {
-//     firstname: "John",
-//     lastname: "Doe",
-//     age: 37,
-// }
+//   firstname: "John",
+//   lastname: "Doe",
+//   age: 37,
+//   getfullname: function(){
+//     return this.firstname + " " + this.lastname;
+//   }
+// };
+// console.log (person.getfullname())
 
 // delete person.age;
 // person.city = "LA";
@@ -36,36 +42,57 @@
 
 // 5
 
-// const student = {
-//   name: "Mike",
-//   age: "12",
-// };
-
 // const address = {
 //   street: "CHD",
 //   city: "UB",
 //   zipCode: "00976",
-//   student: student
 // };
 
-// console.log(address)
+// const student = {
+//   name: "Mike",
+//   age: "12",
+//   address: address,
+//   getAddress: function () {
+//     return this.address;
+//   },
+// };
+
+// console.log(student.getAddress());
 
 // 6
+
+// const user = {
+//     name: "Mike",
+//     age: 30,
+//     greet: function (){
+//         return "hello" + " " + this.name;
+//     },
+//     updateName: function(newName){
+//         this.name = newName
+//     },
+// }
+// user.updateName("Micheal")
+// console.log(user.greet());
 
 // 7
 
 // const book1 = {
-//     title:"",
-//     author:"",
-//     year:"",
+//     title:"HA HA HA HA",
+//     author:"Joker",
+//     year:"2003",
 // }
 
 // const book2 = {
-//     author:"",
-//     description:"",
-//     category:"",
-//     year:"",
+//     author:"Joker",
+//     description:"nadkln dnaionn idbnaio ndian",
+//     category:"Action",
+//     year:"2003",
 // }
+// function mergeBooks(a, b){
+//        return  Object.assign (a, b)
+// }
+// console.log (book1);
+// console.log (mergeBooks(book1, book2));
 
 // 8
 
@@ -78,6 +105,7 @@
 // Object.freeze(config)
 
 // config.host = "qwerty"
+// delete config.port
 
 // console.log(config)
 
@@ -98,25 +126,41 @@
 
 // 9
 
+// const user = {
+//     name: "Mike",
+//     age: 25,
+//     gender: "male",
+// }
+// console.log(Object.entries(user));
+
 // 10
 
-// const students = {
-//     1: {name: "Bolor",    grade:95};
-//     2: {name: "Anu",      grade:87};
-//     3: {name: "Temuujin", grade:78};
-//     4: {name: "Delger",   grade:83};
-//     5: {name: "Zolzaya",  grade:92};
-// }
+// const class1Students = {
+//   {name: "Bolor", grade: 95},
+//   {name: "Anu", grade: 87},
+//   {name: "Temuujin", grade: 78},
+//   {name: "Delger", grade: 83},
+//   {name: "Zolzaya", grade: 92},
+// };
 
-// Дундаж Оноо Тооцох (calculateAverage)
+// // Дундаж Оноо Тооцох (calculateAverage)
 
-// let sum = 0;
-// let a = 0;
-// while (a < grade){
-//     a++;
-//     sum += a;
-// }
-// console.log (sum/5);
+// const calculateAverage = (students) => {
+//   const studentsArr = Object.values(students);
+//   let totalGrade = 0;
+//   for (let x = 0; x < studentsArr.length; x++) {
+//     totalGrade = totalGrade + studentsArr[x].grade;
+//   }
+//   return totalGrade / studentsArr.length;
+// };
+
+// const findAboveAverageStudents = (students) => {
+//   const average = calculateAverage(students);
+//   return(average)
+// };
+
+// console.log(findAboveAverageStudents(class1Students));
+
 
 // Дунджаас Дээш Оноотой Оюутнуудыг Олох Функц
 // (findAboveAverageStudents)

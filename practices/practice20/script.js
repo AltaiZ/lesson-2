@@ -64,17 +64,17 @@
 //  console.log (totalPrice)
 
 // 6 Average Age Calculator
-// const people2 = [
-//   { name: "Tom", age: 20 },
-//   { name: "Jerry", age: 25 },
-//   { name: "Spike", age: 30 },
-// ];
-// let i = 0
-// let Average = 0
-// for (let i = 0; i < people2.length; i++){
-//     Average += people2[i].age
-// }
-// console.log(Average/3)
+const people2 = [
+  { name: "Tom", age: 20 },
+  { name: "Jerry", age: 25 },
+  { name: "Spike", age: 30 },
+];
+let i = 0
+let Average = 0
+for (let i = 0; i < people2.length; i++){
+    Average += people2[i].age
+}
+console.log("average age is" + " " + Average/3)
 
 // // 7 Remove Duplicates
 // const dupArr = [1, 2, 2, 3, 4, 4, 5];
@@ -104,16 +104,16 @@
 // console.log(arr2);
 
 // 8 Longest Word
-const sentence = "JavaScript is awesome and powerful";
-const splittArr = sentence.split(" ");
-let maxWord = 0;
-console.log(splittArr);
-for (let i = 0; i < splittArr.length; i++) {
-  if (splittArr[maxWord].length < splittArr[i].length) {
-    maxWord = i;
-  }
-}
-console.log(splittArr[maxWord]);
+// const sentence = "JavaScript is awesome and powerful";
+// const splittArr = sentence.split(" ");
+// let maxWord = 0;
+// // console.log(splittArr);
+// for (let i = 0; i < splittArr.length; i++) {
+//   if (splittArr[maxWord].length < splittArr[i].length) {
+//     maxWord = i;
+//   }
+// }
+// console.log(splittArr[maxWord]);
 
 // 9 Find Most Expensive Product
 // const products = [
