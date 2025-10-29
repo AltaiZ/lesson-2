@@ -130,3 +130,44 @@ const usernames = ["alex", "jonathan", "mia", "stephanie"];
 /* TODO: filter to return only usernames with 5 or more characters */
 
 console.log(usernames.filter((name)=> name = name.length >= 5));
+
+// // ===================== 1. MAP — add fullName property to users =====================
+const users1 = [
+  { first: "John", last: "Doe" },
+  { first: "Jane", last: "Smith" }
+];
+// /* TODO: use map to return a new array where each object gains a fullName like "John Doe" */
+
+console.log(users1.map((fullname) => fullname.first + " " + fullname.last))
+
+// // ===================== 2. FILTER — get products in stock & price > 20 =====================
+const products = [
+  { name: "Keyboard", price: 30, inStock: true },
+  { name: "Mouse", price: 15, inStock: true },
+  { name: "Laptop", price: 900, inStock: false }
+];
+// /* TODO: use filter to return only products that are inStock and price > 20 */
+
+console.log(products.filter((get) => get.inStock == true) .filter((get) => get = get.price > 20) .map((get) => get.name));
+
+// // ===================== 3. FIND — get first student with grade A =====================
+const students = [
+  { name: "Mia", grade: "B" },
+  { name: "Leo", grade: "A" },
+  { name: "Zoe", grade: "A" }
+];
+// /* TODO: use find to get the first student with grade "A" */
+
+console.log(students.find((first) => first= first.grade == "A" ))
+
+// // ===================== 4. FOREACH — log product names with index =====================
+const productNames = ["Keyboard", "Mouse", "Laptop"];
+// /* TODO: use forEach to console.log each item like: "1. Keyboard" */
+
+productNames.forEach((names,index) => console.log(index + 1, names) );
+
+// // ===================== 5. MAP — apply 10% discount to product prices =====================
+const pricess = [100, 50, 200];
+// /* TODO: use map to return a new array with each price 10% lower */ 
+
+console.log(pricess.map((discount) => discount = discount - (discount / 100 ) * 10));
