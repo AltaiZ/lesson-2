@@ -135,14 +135,13 @@
 
 // 10
 
-// const class1Students = {
-//   {name: "Bolor", grade: 95},
-//   {name: "Anu", grade: 87},
-//   {name: "Temuujin", grade: 78},
-//   {name: "Delger", grade: 83},
-//   {name: "Zolzaya", grade: 92},
-// };
-
+const class1Students = [
+  { name: "Bolor", grade: 95 },
+  { name: "Anu", grade: 87 },
+  { name: "Temuujin", grade: 78 },
+  { name: "Delger", grade: 83 },
+  { name: "Zolzaya", grade: 92 },
+];
 // // Дундаж Оноо Тооцох (calculateAverage)
 
 // const calculateAverage = (students) => {
@@ -160,14 +159,35 @@
 // };
 
 // console.log(findAboveAverageStudents(class1Students));
-
+let avGrade = 0;
+class1Students.forEach((average) => {
+  average = avGrade += average.grade / class1Students.length;
+});
+console.log(avGrade);
 
 // Дунджаас Дээш Оноотой Оюутнуудыг Олох Функц
 // (findAboveAverageStudents)
 
+console.log(
+  class1Students
+    .filter((avUnder) => (avUnder = avUnder.grade >= avGrade))
+    .map((item) => item.name)
+);
+
 // Хамгийн Өндөр Оноотой Оюутан Олох Функц
 // (findHighestScoreStudent)
+
+console.log(
+  class1Students
+    .filter((over) => (over = over.grade >= 93))
+    .map((over) => (over = over.name))
+);
 
 // Хамгийн Бага Оноотой Оюутан Олох Функц
 // (findLowestScoreStudent)
 
+console.log(
+  class1Students
+    .filter((under) => (under = under.grade <= 80))
+    .map((under) => (under = under.name))
+);
