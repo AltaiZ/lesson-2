@@ -1,22 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <!-- <input type="text" placeholder="height" id="height" />
-    <input type="text" placeholder="width" id="width"/>
-    <div id="hariu"></div>
-    <button onclick="{Area()}">Area</button>
-    <button onclick="{perimeter()}">perimeter</button>
-    <script src="script.js"></script> -->
-    <input type="text" placeholder="Balance" id="height" />
-    <input type="text" placeholder="Withdraw, Deposit" id="width"/>
-    <div id="hariu"></div>
-    <button onclick="{Area()}">Check</button>
+  <body style="display: flex; flex-direction: column; gap: 20px">
+    <div>
+      <h1>Number 1</h1>
+      <input type="text" placeholder="height" id="height" />
+      <input type="text" placeholder="width" id="width" />
+      <div id="hariu"></div>
+      <br />
+      <button onclick="{Area()}">Area</button>
+      <button onclick="{perimeter()}">perimeter</button>
+    </div>
+    <div>
+      <h1>Number 2</h1>
+      <input type="text" placeholder="name" id="name" />
+      <input type="text" placeholder="age" id="age" />
+      <div id="intro"></div>
+      <br />
+      <button onclick="{greet()}">Greet</button>
+    </div>
+    <div>
+      <h1>Number 3</h1>
+      <input type="text" placeholder="Owner" id="owner" />
+      <input type="number" placeholder="Amount" id="amount" />
+      <button id="createBtn">CreateAccount</button>
+      <p id="account"></p>
+      <div id="hariu2"></div>
+      <br />
+      <input type="number" placeholder="amount" id="actionInput">
+      <button onclick="{deposit()}">Deposit</button>
+      <button onclick="{withdraw()}">Withdraw</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
- 
