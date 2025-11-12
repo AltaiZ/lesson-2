@@ -22,8 +22,8 @@
 const info = document.getElementById("WeatherInfo");
 async function mainWeather() {
   const city = document.getElementById(`city-input`).value;
-  if (city) {
-    const weather = await fetch(
+  if (city) { 
+        const weather = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?
 q=${city}&units=metric&appid=ffc74c9e41d3cd99bf6
 bb25a7f582a7a`
@@ -32,9 +32,13 @@ bb25a7f582a7a`
     console.log(data);
         info.innerHTML = `
         <h2> ${data.name}, ${data.sys.country}</h2>
-        <p> Temperatur: ${data.main.temp}°C</p>
-        <p> Weather: ${data.weather[0].description}</p>
-        <p> Humidity: ${data.main.humidity} %</p>
-        <p> Wind: ${data.wind.speed}</p>`;        
+        <br>
+        <p> 🌡️ Temperatur: ${data.main.temp}°C</p>
+        <br>
+        <p> 🌦️ Weather: ${data.weather[0].description}</p>
+        <br>
+        <p> 💧 Humidity: ${data.main.humidity} %</p>
+        <br>
+        <p> 💨 Wind: ${data.wind.speed} m's </p>`;        
      } 
 }
