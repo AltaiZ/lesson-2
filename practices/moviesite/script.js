@@ -6,13 +6,15 @@ async function movies() {
   const data = await poster.json();
 
   data.results.forEach((item) => {
-    const contentContainer = document.createElement("container");
+    const contentContainer = document.createElement("div");
+    contentContainer.classList.add("container");
     contentContainer.innerHTML = `  <img src="https://image.tmdb.org/t/p/w500/v9NLaLBbrkDwq44qG51v8T6sPuI.jpg"/>
         <p>${item.original_title}</p>
-        <p>2025</p>
-        <p>★ 7.9</p>
-        <p>Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous</p>`;
-        gridWrapper.appendChild(contentContainer);
+        <p>${item.release_date}</p>
+        <p class="vote"> ${item.vote_average}</p>
+        <span class="desc">${item.overview}</span>`;
+    gridWrapper.appendChild(contentContainer);
+    console.log(data.results);
   });
 }
 movies();
