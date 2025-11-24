@@ -38,8 +38,7 @@ import Home from "./Home";
 import Menu from "./Menu";
 
 function App() {
-  const friuts = ["apple, banana, orange"];
-
+  
   return (
     <>
      <Header/>
