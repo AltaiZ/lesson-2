@@ -1,5 +1,6 @@
 import { Product } from "./Product";
-
+import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router";
 const products = [
   {
     id: 1,
@@ -58,16 +59,39 @@ const products = [
     description: "Add some green to your room.",
   },
 ];
+import { Header } from "./Header";
 
 const App = () => {
+  const [cartItemCount, setCartItemCound] = useState(0);
+
   return (
-    <div>
-      {products.map((product) => (
-        <Product name={product.name} id={product.id} emoji={product.emoji} desc={product.description} price={product.price} />
-      ))}
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="grid grid-cols-3 gap-5 p-20 bg-gray-50">
+                {products.map((product) => (
+                  <Product
+                    count={cartItemCount}
+                    setCount={setCartItemCound}
+                    name={product.name}
+                    id={product.id}
+                    emoji={product.emoji}
+                    desc={product.description}
+                    price={product.price}
+                  />
+                ))}
+              </div>
+            }
+          ></Route>
+          <Route path="/detail" element={<p>Detail Page</p>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 
 export default App;
-
