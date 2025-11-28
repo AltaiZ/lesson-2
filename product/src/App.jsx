@@ -1,7 +1,6 @@
 import { Product } from "./Product";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
-
 import { Header } from "./Header";
 
 const products = [
@@ -64,7 +63,7 @@ const products = [
 ];
 
 const App = () => {
-  const [cartItemCount, setCartItemCound] = useState(0);
+  const [cartItemCount, setCartItemCount] = useState(0);
 
   return (
     <BrowserRouter>
@@ -77,7 +76,7 @@ const App = () => {
               {products.map((product) => (
                 <Product
                   count={cartItemCount}
-                  setCount={setCartItemCound}
+                  setCount={setCartItemCount}
                   name={product.name}
                   id={product.id}
                   emoji={product.emoji}
